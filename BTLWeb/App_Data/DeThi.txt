@@ -1,0 +1,7 @@
+DE001|Kiểm tra Tin học đại cương|Tin học đại cương|30|20|Kiến thức cơ bản về máy tính và công nghệ thông tin|1
+DE002|Kiểm tra lập trình C#|Lập trình C#|45|30|Kiến thức về biến, vòng lặp và lập trình C#|1
+DE003|Kiểm tra cơ sở dữ liệu|Cơ sở dữ liệu|30|20|Kiến thức SQL và quản trị cơ sở dữ liệu|1
+DE004|Kiểm tra thương mại điện tử|Thương mại điện tử|40|25|Kiến thức về kinh doanh và giao dịch trực tuyến|1
+DE005|Kiểm tra kiến thức tổng hợp|Kiến thức tổng hợp|60|40|Bài kiểm tra kiến thức tổng hợp|1
+DE006|Đề thi đã ẩn|Tin học đại cương|30|20|Đề thi này không được hiển thị|1
+DE0012|Kiểm Tra Thể Dục|Thể Chất 1|90|20|Thi Trắc Nghiệm|1

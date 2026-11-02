@@ -1,0 +1,95 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Site.Master.cs"
+    Inherits="BTLWeb.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Website Thi Trắc Nghiệm</title>
+
+    <link href="CSS/Site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="TrangChu.aspx">QUIZ ONLINE</a>
+                </div>
+
+                <nav class="menu">
+                    <a href="TrangChu.aspx">Trang chủ</a>
+
+                    <a href="DanhSachDeThi.aspx">Đề thi</a>
+
+                    <asp:PlaceHolder ID="phQuanLy" runat="server"
+                        Visible="false">
+
+                        <a href="QuanLyDeThi.aspx">Quản lý đề thi</a>
+
+                        <a href="QuanLyCauHoi.aspx">Quản lý câu hỏi</a>
+
+                    </asp:PlaceHolder>
+                </nav>
+
+                <div class="account-area">
+
+                    <asp:PlaceHolder ID="phChuaDangNhap"
+                        runat="server">
+
+                        <a href="DangNhap.aspx" class="account-link">
+                            Đăng nhập
+                        </a>
+
+                        <a href="DangKy.aspx" class="register-link">
+                            Đăng ký
+                        </a>
+
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="phDaDangNhap"
+                        runat="server" Visible="false">
+
+                        <a href="TaiKhoan.aspx">
+                            Xin chào,
+                            <asp:Label ID="lblTenNguoiDung"
+                                runat="server" />
+                        </a>
+
+                        <asp:LinkButton ID="btnDangXuat"
+                            runat="server"
+                            CssClass="account-link"
+                            OnClick="btnDangXuat_Click"
+                            CausesValidation="false">
+                            Đăng xuất
+                        </asp:LinkButton>
+
+                    </asp:PlaceHolder>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <asp:ContentPlaceHolder ID="MainContent"
+                runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 - Website thi trắc nghiệm trực tuyến</p>
+            <p>Hỗ trợ học tập và kiểm tra kiến thức</p>
+        </footer>
+
+    </form>
+</body>
+</html>

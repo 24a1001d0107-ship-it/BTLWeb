@@ -1,0 +1,204 @@
+﻿
+.management-page {
+    padding: 30px 10px;
+    min-height: 500px;
+}
+
+.management-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .management-header h1 {
+        color: #263b63;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .management-header p {
+        color: #777;
+    }
+
+.management-form,
+.management-list {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+    .management-form h2,
+    .management-list h2 {
+        color: #263b63;
+        font-size: 21px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+.management-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .form-group label {
+        color: #333;
+        font-weight: bold;
+    }
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.management-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+    .management-input:focus {
+        border-color: #2864c5;
+        box-shadow: 0 0 0 2px rgba(40,100,197,0.12);
+    }
+
+.management-buttons,
+.management-search {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.management-button {
+    border: none;
+    border-radius: 6px;
+    padding: 11px 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-button {
+    background: #198754;
+    color: white;
+}
+
+.update-button {
+    background: #2864c5;
+    color: white;
+}
+
+.reset-button {
+    background: #e5e8ef;
+    color: #333;
+}
+
+.search-button {
+    background: #263b63;
+    color: white;
+}
+
+    .add-button:hover,
+    .update-button:hover,
+    .search-button:hover {
+        opacity: 0.85;
+    }
+
+.reset-button:hover {
+    background: #d1d6df;
+}
+
+.management-message {
+    display: block;
+    margin-top: 15px;
+    color: #2864c5;
+    font-weight: bold;
+}
+
+.management-search .management-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.management-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.management-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+    .management-table th {
+        background: #263b63;
+        color: white;
+        padding: 14px 10px;
+        text-align: center;
+    }
+
+    .management-table td {
+        padding: 12px 10px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        color: #444;
+    }
+
+    .management-table tr:hover td {
+        background: #f3f7ff;
+    }
+
+.table-action {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-action {
+    background: #dceaff;
+    color: #1760b5;
+}
+
+.toggle-action {
+    background: #fff1d5;
+    color: #a66a00;
+}
+
+@media screen and (max-width: 650px) {
+    .management-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .management-form,
+    .management-list {
+        padding: 16px;
+    }
+
+    .management-header h1 {
+        font-size: 24px;
+    }
+
+    .management-search {
+        flex-direction: column;
+    }
+
+        .management-search .management-input,
+        .management-search .management-button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+}

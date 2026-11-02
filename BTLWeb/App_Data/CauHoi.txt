@@ -1,0 +1,12 @@
+CH001|DE001|CPU là viết tắt của từ nào?|Central Processing Unit|Computer Personal Unit|Control Processing User|Central Program Unit|A
+CH002|DE001|RAM là bộ nhớ gì?|Bộ nhớ chỉ đọc|Bộ nhớ truy cập ngẫu nhiên|Ổ cứng|Bộ xử lý|B
+CH003|DE001|Thiết bị nào dùng để nhập dữ liệu?|Màn hình|Máy in|Bàn phím|Loa|C
+CH004|DE001|Phần mềm nào sau đây là hệ điều hành?|Windows|Microsoft Word|Google Chrome|Photoshop|A
+CH005|DE001|Đơn vị đo dung lượng dữ liệu thường dùng là gì?|Mét|Kilogram|Byte|Lít|C
+CH006|DE002|C# là ngôn ngữ lập trình do công ty nào phát triển?|Google|Microsoft|Apple|IBM|B
+CH007|DE002|Kiểu dữ liệu nào dùng để lưu số nguyên trong C#?|int|string|bool|char|A
+CH008|DE002|Từ khóa nào dùng để khai báo lớp trong C#?|function|class|method|object|B
+CH009|DE003|SQL là viết tắt của cụm từ nào?|Structured Query Language|Simple Question Language|System Query Logic|Standard Quick Language|A
+CH010|DE003|Lệnh nào dùng để truy vấn dữ liệu trong SQL?|INSERT|UPDATE|SELECT|DELETE|C
+CH012|DE0012|ê|r|o|i|p|A
+CH0014|DE0012|3|ư|q|t|f|A

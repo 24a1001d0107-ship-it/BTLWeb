@@ -1,0 +1,597 @@
+﻿
+/* ==============================
+   CAU HINH CHUNG
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fc;
+    color: #263445;
+    font-size: 15px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e8edf5;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #173b75;
+}
+
+.logo-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo-highlight {
+    color: #2563eb;
+}
+
+.header-slogan {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.header-contact {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+.navbar {
+    background: #173b75;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+    .nav-links a {
+        color: white;
+        padding: 21px 16px;
+        display: inline-block;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+
+        .nav-links a:hover {
+            background: #2563eb;
+        }
+
+.nav-account {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login,
+.btn-register {
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-login {
+    background: white;
+    color: #173b75;
+}
+
+.btn-register {
+    background: #f59e0b;
+    color: white;
+}
+
+    .btn-login:hover,
+    .btn-register:hover {
+        opacity: 0.85;
+    }
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+.main-content {
+    min-height: 550px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+    background: #122b50;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.footer h3,
+.footer h4 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.copyright {
+    border-top: 1px solid #334b6b;
+    padding: 18px;
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+/* ==============================
+   BUTTON CHUNG
+============================== */
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background: #1d4ed8;
+    }
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .nav-links a {
+            padding: 12px 8px;
+        }
+
+    .nav-account {
+        margin: 10px 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   TRANG CHU - HERO BANNER
+================================= */
+
+.hero {
+    background: linear-gradient(120deg, #173b75, #2563eb);
+    border-radius: 18px;
+    padding: 55px 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 620px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label {
+    background: rgba(255,255,255,0.15);
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 39px;
+    line-height: 1.35;
+    margin: 25px 0 15px;
+}
+
+    .hero h1 span {
+        color: #ffd166;
+    }
+
+.hero-text p {
+    color: #dbeafe;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #f59e0b;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .hero-btn:hover {
+        background: #d97706;
+        transform: translateY(-2px);
+    }
+
+.hero-btn-secondary {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 7px;
+}
+
+.hero-icon {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-circle {
+    width: 220px;
+    height: 220px;
+    border: 12px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .hero-circle span {
+        font-size: 65px;
+    }
+
+    .hero-circle h2 {
+        font-size: 25px;
+        margin: 5px 0;
+    }
+
+    .hero-circle p {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+/* =================================
+   THONG KE
+================================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px 0 55px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+.stat-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+    .stat-icon.blue {
+        background: #dbeafe;
+    }
+
+    .stat-icon.orange {
+        background: #ffedd5;
+    }
+
+    .stat-icon.green {
+        background: #dcfce7;
+    }
+
+    .stat-icon.purple {
+        background: #f3e8ff;
+    }
+
+.stat-card h2 {
+    color: #173b75;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* =================================
+   TIEU DE CAC KHU VUC
+================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .section-title span {
+        color: #2563eb;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+        color: #173b75;
+        margin: 12px 0;
+    }
+
+    .section-title p {
+        color: #64748b;
+        line-height: 1.7;
+    }
+
+/* =================================
+   DANH SACH MON HOC
+================================= */
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 65px;
+}
+
+.subject-card {
+    background: white;
+    border-radius: 13px;
+    padding: 25px 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+    transition: 0.3s;
+    border: 1px solid #edf1f7;
+}
+
+    .subject-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 22px rgba(37,99,235,0.12);
+    }
+
+.subject-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.subject-blue {
+    background: #dbeafe;
+}
+
+.subject-orange {
+    background: #ffedd5;
+}
+
+.subject-green {
+    background: #dcfce7;
+}
+
+.subject-purple {
+    background: #f3e8ff;
+}
+
+.subject-card h3 {
+    color: #173b75;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.subject-card p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 13px;
+    min-height: 66px;
+    margin-bottom: 18px;
+}
+
+.subject-card a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* =================================
+   HUONG DAN
+================================= */
+
+.guide {
+    margin-top: 45px;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.guide-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    border: 1px solid #edf1f7;
+}
+
+.guide-number {
+    width: 55px;
+    height: 55px;
+    margin: auto auto 18px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 21px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-item h3 {
+    color: #173b75;
+    margin-bottom: 10px;
+}
+
+.guide-item p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.home-bottom {
+    margin-top: 45px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #eaf2ff;
+    border-radius: 15px;
+}
+
+    .home-bottom h2 {
+        color: #173b75;
+        margin-bottom: 12px;
+    }
+
+    .home-bottom p {
+        color: #64748b;
+        margin-bottom: 22px;
+    }
+
+/* =================================
+   RESPONSIVE TRANG CHU
+================================= */
+
+@media screen and (max-width: 900px) {
+    .stats,
+    .subject-grid,
+    .guide-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 35px 25px;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stats,
+    .subject-grid,
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}

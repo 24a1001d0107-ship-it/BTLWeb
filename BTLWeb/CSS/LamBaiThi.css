@@ -1,0 +1,150 @@
+﻿
+.doing-page {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.doing-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+    .doing-heading h1 {
+        color: #263b5e;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+.doing-exam-name {
+    display: block;
+    color: #777;
+    font-size: 16px;
+}
+
+.doing-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.doing-info-item {
+    background: white;
+    padding: 17px 12px;
+    text-align: center;
+    border-radius: 9px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+    .doing-info-item span {
+        display: block;
+        color: #777;
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .doing-info-item strong {
+        display: block;
+        color: #263b5e;
+        font-size: 17px;
+    }
+
+.timer-box {
+    background: #fff3e0;
+}
+
+    .timer-box strong {
+        color: #d35400;
+        font-size: 23px;
+    }
+
+.question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.question-card {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.question-title {
+    color: #263b5e;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.answer-list {
+    width: 100%;
+}
+
+    .answer-list td {
+        padding: 7px 0;
+    }
+
+    .answer-list input[type="radio"] {
+        margin-right: 9px;
+        accent-color: #2672ae;
+    }
+
+    .answer-list label {
+        color: #444;
+        font-size: 15px;
+        line-height: 1.6;
+        cursor: pointer;
+    }
+
+.submit-area {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.doing-message {
+    display: block;
+    color: #d62828;
+    margin-bottom: 12px;
+}
+
+.submit-exam-button {
+    padding: 14px 35px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .submit-exam-button:hover {
+        background: #d66d12;
+    }
+
+@media (max-width: 750px) {
+    .doing-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .question-card {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .doing-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .submit-exam-button {
+        width: 100%;
+    }
+}
