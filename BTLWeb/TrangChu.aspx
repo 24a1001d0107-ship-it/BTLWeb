@@ -39,49 +39,55 @@
         </div>
     </section>
 
-    <section class="features">
-        <h2>Những chức năng nổi bật</h2>
+    
+<section class="features">
+    <h2>Những chức năng nổi bật</h2>
 
-        <div class="feature-list">
+    <div class="feature-list">
 
-            <div class="feature-card">
-                <div class="feature-icon">📚</div>
-                <h3>Kho đề thi</h3>
-                <p>
-                    Cung cấp nhiều đề thi thuộc các môn học
-                    và chủ đề khác nhau.
-                </p>
-            </div>
+        <!-- KHO ĐỀ THI -->
+        <a href="DanhSachDeThi.aspx" class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Kho đề thi</h3>
+            <p>
+                Cung cấp nhiều đề thi thuộc các môn học
+                và chủ đề khác nhau.
+            </p>
+        </a>
 
-            <div class="feature-card">
-                <div class="feature-icon">⏱️</div>
-                <h3>Thi trực tuyến</h3>
-                <p>
-                    Làm bài thi với đồng hồ đếm ngược
-                    và tự động nộp bài khi hết giờ.
-                </p>
-            </div>
+        <!-- THI TRỰC TUYẾN -->
+        <a href="LamBaiThi.aspx" class="feature-card">
+            <div class="feature-icon">⏱️</div>
+            <h3>Thi trực tuyến</h3>
+            <p>
+                Làm bài thi với đồng hồ đếm ngược
+                và tự động nộp bài khi hết giờ.
+            </p>
+        </a>
 
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Kết quả tức thì</h3>
-                <p>
-                    Xem điểm số, số câu đúng, số câu sai
-                    ngay sau khi hoàn thành bài thi.
-                </p>
-            </div>
+        <!-- KẾT QUẢ THI -->
+        <a href="KetQuaThi.aspx" class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Kết quả tức thì</h3>
+            <p>
+                Xem điểm số, số câu đúng, số câu sai
+                ngay sau khi hoàn thành bài thi.
+            </p>
+        </a>
 
-            <div class="feature-card">
-                <div class="feature-icon">📈</div>
-                <h3>Lịch sử thi</h3>
-                <p>
-                    Theo dõi kết quả các lần thi
-                    để đánh giá quá trình học tập.
-                </p>
-            </div>
+        <!-- LỊCH SỬ THI -->
+        <a href="LichSuThi.aspx" class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Lịch sử thi</h3>
+            <p>
+                Theo dõi kết quả các lần thi
+                để đánh giá quá trình học tập.
+            </p>
+        </a>
 
-        </div>
-    </section>
+    </div>
+</section>
+
 
     <section class="home-bottom">
         <h2>Bắt đầu kiểm tra kiến thức của bạn!</h2>

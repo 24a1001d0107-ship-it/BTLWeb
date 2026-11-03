@@ -143,3 +143,41 @@
         padding: 35px 20px;
     }
 }
+
+/* THẺ CHỨC NĂNG CÓ THỂ NHẤN */
+.feature-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    /* HIỆU ỨNG KHI DI CHUỘT */
+    .feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+        text-decoration: none;
+    }
+
+    /* GIỮ MÀU TIÊU ĐỀ */
+    .feature-card h3 {
+        color: #243b60;
+    }
+
+    /* GIỮ MÀU NỘI DUNG */
+    .feature-card p {
+        color: #666;
+    }
+
+    /* HIỆU ỨNG KHI NHẤN */
+    .feature-card:active {
+        transform: scale(0.98);
+    }
+
+    /* HỖ TRỢ BÀN PHÍM */
+    .feature-card:focus-visible {
+        outline: 3px solid #f39c12;
+        outline-offset: 4px;
+    }
+

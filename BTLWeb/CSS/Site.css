@@ -1,15 +1,27 @@
 ﻿
+/* =====================================
+   1. RESET CSS
+===================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =====================================
+   2. BODY
+===================================== */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f6f9;
     color: #333;
 }
+
+/* =====================================
+   3. HEADER
+===================================== */
 
 .header {
     width: 100%;
@@ -30,12 +42,16 @@ body {
     flex-wrap: wrap;
 }
 
+/* LOGO */
+
 .logo a {
     color: white;
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
 }
+
+/* MENU */
 
 .menu {
     display: flex;
@@ -56,12 +72,16 @@ body {
             color: #ffd166;
         }
 
+/* KHU VỰC TÀI KHOẢN */
+
 .account-area {
     display: flex;
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
 }
+
+/* NÚT ĐĂNG KÝ */
 
 .register-link {
     background: #e67e22;
@@ -74,6 +94,10 @@ body {
         color: white !important;
     }
 
+/* =====================================
+   4. MAIN CONTAINER
+===================================== */
+
 .main-container {
     max-width: 1200px;
     min-height: 650px;
@@ -81,10 +105,181 @@ body {
     padding: 20px;
 }
 
-.footer {
+/* =====================================
+   5. FOOTER - QUIZ ONLINE
+===================================== */
+
+.site-footer {
+    width: 100%;
     background: #263b5e;
     color: white;
-    text-align: center;
-    padding: 22px 10px;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+/* BỐ CỤC 4 CỘT */
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
+    gap: 35px;
+}
+
+/* TIÊU ĐỀ QUIZ ONLINE */
+
+.footer-column h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* TIÊU ĐỀ CÁC CỘT */
+
+.footer-column h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+    /* GẠCH CHÂN TIÊU ĐỀ */
+
+    .footer-column h3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 38px;
+        height: 3px;
+        background: #f39c12;
+        border-radius: 3px;
+    }
+
+/* ĐOẠN GIỚI THIỆU */
+
+.footer-column p {
+    font-size: 14px;
     line-height: 1.8;
+    color: #d5deeb;
+    margin: 0 0 12px;
+}
+
+/* KHẨU HIỆU */
+
+.footer-column .footer-slogan {
+    color: #ffad42;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* DANH SÁCH */
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .footer-column ul li {
+        font-size: 14px;
+        color: #d5deeb;
+        margin-bottom: 14px;
+        line-height: 1.6;
+    }
+
+        /* LIÊN KẾT */
+
+        .footer-column ul li a {
+            color: #d5deeb;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.25s ease;
+        }
+
+            /* HIỆU ỨNG DI CHUỘT */
+
+            .footer-column ul li a:hover {
+                color: #ffad42;
+                padding-left: 6px;
+            }
+
+/* THANH BẢN QUYỀN */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+    /* NỘI DUNG BẢN QUYỀN */
+
+    .footer-bottom p {
+        font-size: 13px;
+        color: #c5d0df;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+/* =====================================
+   6. RESPONSIVE - TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* =====================================
+   7. RESPONSIVE - MOBILE
+===================================== */
+
+@media (max-width: 576px) {
+
+    .header-container {
+        justify-content: center;
+    }
+
+    .main-container {
+        padding: 15px;
+    }
+
+    .site-footer {
+        margin-top: 40px;
+        padding-top: 35px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0 20px 30px;
+    }
+
+    .footer-column h2 {
+        font-size: 23px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px 15px;
+    }
 }

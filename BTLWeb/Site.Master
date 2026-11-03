@@ -85,10 +85,78 @@
             </asp:ContentPlaceHolder>
         </main>
 
-        <footer class="footer">
-            <p>© 2026 - Website thi trắc nghiệm trực tuyến</p>
-            <p>Hỗ trợ học tập và kiểm tra kiến thức</p>
-        </footer>
+        
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- CỘT 1: GIỚI THIỆU -->
+        <div class="footer-column footer-about">
+            <h2>QUIZ ONLINE</h2>
+
+            <p>
+                Hệ thống thi trắc nghiệm trực tuyến giúp
+                người học ôn tập, luyện tập và kiểm tra
+                kiến thức một cách nhanh chóng, hiệu quả.
+            </p>
+
+            <p class="footer-slogan">
+                Học tập mọi lúc - Kiểm tra mọi nơi.
+            </p>
+        </div>
+
+        <!-- CỘT 2: LIÊN KẾT NHANH -->
+        <div class="footer-column">
+            <h3>Liên kết nhanh</h3>
+
+            <ul>
+                <li><a href="TrangChu.aspx">Trang chủ</a></li>
+                <li><a href="DanhSachDeThi.aspx">Kho đề thi</a></li>
+                <li><a href="DangNhap.aspx">Đăng nhập</a></li>
+                <li><a href="DangKy.aspx">Đăng ký tài khoản</a></li>
+                <li><a href="LichSuThi.aspx">Lịch sử thi</a></li>
+            </ul>
+        </div>
+
+        <!-- CỘT 3: HƯỚNG DẪN -->
+        <div class="footer-column">
+            <h3>Hướng dẫn sử dụng</h3>
+
+            <ul>
+                <li><a href="DangKy.aspx">Tạo tài khoản</a></li>
+                <li><a href="DanhSachDeThi.aspx">Chọn đề thi</a></li>
+                <li><a href="DanhSachDeThi.aspx">Tham gia làm bài</a></li>
+                <li><a href="LichSuThi.aspx">Theo dõi kết quả</a></li>
+            </ul>
+        </div>
+
+        <!-- CỘT 4: THÔNG TIN -->
+        <div class="footer-column">
+            <h3>Thông tin hệ thống</h3>
+
+            <ul>
+                <li>📚 Nền tảng học tập trực tuyến</li>
+                <li>📝 Thi trắc nghiệm trực tuyến</li>
+                <li>⏱️ Theo dõi thời gian làm bài</li>
+                <li>📊 Xem kết quả sau khi thi</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- BẢN QUYỀN -->
+    <div class="footer-bottom">
+        <p>
+            © 2026 QUIZ ONLINE. All rights reserved.
+        </p>
+
+        <p>
+            Website thi trắc nghiệm trực tuyến
+        </p>
+    </div>
+
+</footer>
+
 
     </form>
 </body>
